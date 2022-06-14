@@ -142,13 +142,75 @@ print('\n-----------------------------\nFinding the length of the list')
 print(car_new_li)
 print(len(car_new_li))
 
+# Making Numerical Lists
+
+# Using the range() function
+
+print('\nUsing the range() function')
+
+for value in range(1,5):
+	print(value)
+
+# Using range() to make a List of Numbers
+
+print('\nUsing range() to make a List of Numbers')
+
+numbers = list(range(1,6))
+print(numbers)
+
+# Even numbers in list
+
+print('\nEven numbers')
+
+even_numbers = list(range(2,11,2))
+print(even_numbers)
+
+# Squares -- Appending the list
+
+print('\n Squares appending the list')
+
+squares = []
+
+for value in range(1,11):
+	square = value ** 2
+	squares.append(square)
+
+print(squares)
 
 
+# Simple Statistics with a list of numbers
 
+print('Simple Statistics with a list of numbers')
 
+digits = [1,2,3,4,5,6,7,8,9,0]
+print(min(digits))
+print(max(digits))
+print(sum(digits))
 
+# Slicing the list 
 
+print('\nSlicing the list')
 
+players = ['charles','martina','michael','florence','eli']
+print('Originale list = ',(players))
+print(players[0:3])
+print(players[1:4])
+print(players[:4])
+print(players[2:])
+print(players[:-3])
+print(players[-3:])
 
+# Coping the list
+
+print('\nCoping the list')
+
+my_foods = ['pizza', 'falafel','carrot cake']
+friend_foods = my_foods[:]
+
+my_foods.append('cannoli')
+friend_foods.append('ice cream')
+
+print(my_foods)
+print(friend_foods)
 
 
